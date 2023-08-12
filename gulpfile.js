@@ -1,6 +1,5 @@
-const gulp = require("gulp");
+const config = require("./gulp.config.js");
+const { series, parallel } = require("gulp");
+const { server } = require("./gulp/server");
 
-gulp.task("default", function (done) {
-  console.log("Complete!!");
-  done();
-});
+exports.default = series(parallel(server));
