@@ -8,6 +8,7 @@
     "production": "gulp --production"
   },
   "devDependencies": {
+    "browser-sync": "^2.29.3",
     "gulp": "^4.0.2"
   }
 }
