@@ -9,6 +9,12 @@
   },
   "devDependencies": {
     "browser-sync": "^2.29.3",
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-ejs": "^5.1.0",
+    "gulp-html-beautify": "^1.0.1",
+    "gulp-htmlhint": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^2.0.0",
+    "yargs": "^17.7.2"
   }
 }
