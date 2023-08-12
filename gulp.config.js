@@ -8,7 +8,7 @@ module.exports = {
       top: `${src}/index.ejs`,
     },
   },
-  settingf: {
+  setting: {
     server: {
       port: 2525,
     },
