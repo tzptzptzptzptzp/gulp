@@ -4,7 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp --development",
+    "production": "gulp --production"
   },
   "devDependencies": {
     "gulp": "^4.0.2"
