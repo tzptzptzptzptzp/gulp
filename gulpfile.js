@@ -4,6 +4,7 @@ const { template } = require('./gulp/tasks/template')
 const { css } = require('./gulp/tasks/css')
 const { tailwind } = require('./gulp/tasks/tailwind')
 const { server } = require('./gulp/tasks/server.js')
+const { clean } = require('./gulp/tasks/clean.js')
 
 function watches(done) {
   watch([config.path.src.pages], template)
@@ -14,6 +15,7 @@ function watches(done) {
 }
 
 exports.default = series(
+  parallel(clean),
   parallel(template, css, tailwind),
   parallel(server, watches),
 )
