@@ -26,6 +26,10 @@
     "gulp-sass-variables": "^1.2.0",
     "sass": "^1.65.1",
     "tailwindcss": "^3.3.3",
+    "ts-loader": "^9.4.4",
+    "typescript": "^5.1.6",
+    "webpack": "^5.88.2",
+    "webpack-stream": "^7.0.0",
     "yargs": "^17.7.2"
   }
 }
