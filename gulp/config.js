@@ -11,6 +11,8 @@ module.exports = {
       pages: `${src}/pages/*.(html|ejs)`,
       css: `${src}/**/*.scss`,
       tailwind: `${src}/assets/css/tailwind.css`,
+      copy: `${src}/**/*.+(zip|md)`,
+      video: `${src}/**/*.mp4`,
     },
   },
   setting: {
