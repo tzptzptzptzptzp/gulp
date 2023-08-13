@@ -1,0 +1,42 @@
+@use 'sass:math';
+@use 'variables' as *;
+
+@mixin areaBase {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+@mixin defaultScreen {
+  width: 100%;
+  max-width: max(
+    #{$default-width + px},
+    #{math.div($default-width, $PC) * 100 + vw}
+  );
+  padding: 0 2rem;
+  @media (max-width: #{$BREAK-POINT + px}) {
+  }
+}
+@mixin fullwideScreen {
+  width: 100%;
+  max-width: 100%;
+  padding: 0 2rem;
+  @media (max-width: #{$BREAK-POINT + px}) {
+  }
+}
+@mixin wideScreen {
+  width: 100%;
+  max-width: max(#{$wide-width + px}, #{math.div($wide-width, $PC) * 100 + vw});
+  padding: 0 2rem;
+  @media (max-width: #{$BREAK-POINT + px}) {
+  }
+}
+@mixin narrowScreen {
+  width: 100%;
+  max-width: max(
+    #{$narrow-width + px},
+    #{math.div($narrow-width, $PC) * 100 + vw}
+  );
+  padding: 0 2rem;
+  @media (max-width: #{$BREAK-POINT + px}) {
+  }
+}
