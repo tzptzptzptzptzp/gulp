@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "start": "gulp --development",
-    "production": "gulp --production"
+    "production": "gulp --production",
+    "prepare": "husky install"
   },
   "lint-staged": {
     "*.ts": "eslint --cache --fix",
