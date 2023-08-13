@@ -10,8 +10,19 @@ const { server } = require('./gulp/tasks/server.js')
 const { clean } = require('./gulp/tasks/clean.js')
 
 function watches(done) {
+  // template
   watch([config.path.src.pages], template)
 
+  // layouts
+  watch([config.path.src.layouts], template)
+
+  // components
+  watch([config.path.src.layouts], template)
+
+  //data
+  watch([config.path.data.js], template)
+
+  // assets
   watch(config.path.src.js, script)
   watch([config.path.src.css], css)
   watch([config.path.src.pages], tailwind)

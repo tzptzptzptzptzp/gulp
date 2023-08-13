@@ -7,6 +7,8 @@ module.exports = {
       default: src,
       top: `${src}/index.+(html|ejs)`,
       pages: `${src}/pages/*.(html|ejs)`,
+      layouts: `${src}/layouts/**/*.(html|ejs)`,
+      components: `${src}/components/**/*.(html|ejs)`,
       js: [`${src}/**/*.ts`, `${src}/**/*.js`],
       css: `${src}/**/*.scss`,
       tailwind: `${src}/assets/css/tailwind.css`,
@@ -15,6 +17,9 @@ module.exports = {
       video: `${src}/**/*.mp4`,
     },
     dist: dist,
+    data: {
+      js: `data/**/*.js`,
+    },
     webpack: {
       entry: {
         main: `./${src}/assets/js/main.ts`,
