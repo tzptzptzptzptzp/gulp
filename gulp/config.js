@@ -1,19 +1,28 @@
 const dist = 'dist'
 const src = 'src'
-const pagesSrc = `${src}/pages`
 
 module.exports = {
   path: {
-    dist: dist,
     src: {
       default: src,
       top: `${src}/index.+(html|ejs)`,
       pages: `${src}/pages/*.(html|ejs)`,
+      js: [`${src}/**/*.ts`, `${src}/**/*.js`],
       css: `${src}/**/*.scss`,
       tailwind: `${src}/assets/css/tailwind.css`,
       img: `${src}/**/*.+(png|jpeg|jpg|gif|svg|ico)`,
       copy: `${src}/**/*.+(zip|md)`,
       video: `${src}/**/*.mp4`,
+    },
+    dist: dist,
+    webpack: {
+      entry: {
+        main: `./${src}/assets/js/main.ts`,
+      },
+      output: {
+        filename: '[name].js',
+        dist: `${dist}/assets/js/`,
+      },
     },
   },
   setting: {
