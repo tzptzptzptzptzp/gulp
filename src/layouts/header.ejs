@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title><%- data.meta.title %></title>
+    <meta name="description" content="<%- data.meta.description %> ">
+    <meta name="theme-color" content="#FFF">
+
+    <!-- OGPTag/TwitterCard -->
+    <meta property="og:url" content="">
+    <meta property="og:title" content="<%- data.meta.title %>">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="<%- data.meta.description %>">
+    <meta property="og:image" content="<%- data.meta.src %>/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@">
+    <meta property="og:site_name" content="<%- data.meta.title %>">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="fb:app_id" content="appID">
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="<%- data.meta.src %>/favicon/favicon.png"
+      sizes="192x192"
+      type="image/png">
+    <!-- SmartphoneIcon -->
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="<%- data.meta.src %>/favicon/apple-touch-icon.png">
+    <!-- WindowsTile -->
+    <meta
+      name="msapplication-TileImage"
+      content="<%- data.meta.src %>/favicon/msapplication-tileimage.png">
+    <meta name="msapplication-TileColor" content="#FFF">
+
+    <!-- FontsPreload -->
+
+    <!-- GoogleFonts -->
+
+    <!-- stylesheet Production -->
+    <link rel="stylesheet" href="<%- data.meta.src %>/css/<%- data.meta.css %>.css">
+  </head>
+  <body>
