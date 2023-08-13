@@ -9,7 +9,10 @@
   },
   "lint-staged": {
     "*.ts": "eslint --cache --fix",
-    "*.{json,js,ts}": "prettier --write"
+    "*.{json,js,ts}": "prettier --write",
+    "*.{css,sass,scss}": [
+      "stylelint --fix"
+    ]
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^6.3.0",
