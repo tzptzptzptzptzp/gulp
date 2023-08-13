@@ -1,4 +1,4 @@
-const config = require('../gulp.config')
+const config = require('../config')
 const { src, dest } = require('gulp')
 const plumber = require('gulp-plumber')
 const ejs = require('gulp-ejs')
@@ -7,7 +7,7 @@ const htmlhint = require('gulp-htmlhint')
 const rename = require('gulp-rename')
 const argv = require('yargs').argv
 const browserSync = require('browser-sync')
-const data = require('../data/index.js')
+const data = require('../../data/index.js')
 
 const env = argv.production ? 'production' : 'development'
 
@@ -35,11 +35,13 @@ function searchCache(moduleName, callback) {
 }
 
 function build(key) {
-  purgeCache('../data/index.js')
+  purgeCache('../../data/index.js')
   for (let i = 0; i < data[key].length; i++) {
     let fileName = data[key][i].fileName
     let directory = data[key][i].directory
-    src(`${config.path.src.default}/pages/${data[key][i].template}.${config.setting.template.type}`)
+    src(
+      `${config.path.src.default}/pages/${data[key][i].template}.${config.setting.template.type}`,
+    )
       .pipe(
         plumber({
           errorHandler: function (err) {
