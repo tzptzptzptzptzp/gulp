@@ -3,6 +3,7 @@ module.exports = [
   {
     directory: null,
     fileName: "index",
+    template: "top",
     data: {
       meta: {
         title: "TOP",
