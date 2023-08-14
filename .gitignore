@@ -1,6 +1,9 @@
 # Node artifact files
 node_modules/
 
+# Cache files
+.eslintcache
+
 # Log files
 *.log
 
