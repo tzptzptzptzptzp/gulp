@@ -38,6 +38,7 @@
     "gulp-sass-variables": "^1.2.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.3.0",
+    "prettier": "^3.0.1",
     "sass": "^1.65.1",
     "stylelint": "^15.10.2",
     "stylelint-config-standard": "^34.0.0",
