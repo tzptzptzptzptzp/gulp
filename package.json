@@ -6,7 +6,8 @@
   "scripts": {
     "start": "gulp --development",
     "production": "gulp --production",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "husky": "npx husky add .husky/pre-commit 'npx lint-staged'"
   },
   "lint-staged": {
     "*.ts": "eslint --cache --fix",
