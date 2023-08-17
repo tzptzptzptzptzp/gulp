@@ -17,7 +17,7 @@ function watches(done) {
   watch([config.path.src.layouts], template)
 
   // components
-  watch([config.path.src.layouts], template)
+  watch([config.path.src.components], template)
 
   //data
   watch([config.path.data.js], template)
