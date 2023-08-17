@@ -26,6 +26,7 @@ function watches(done) {
   watch(config.path.src.js, script)
   watch([config.path.src.css], css)
   watch([config.path.src.pages], tailwind)
+  watch([config.path.src.components], tailwind)
   watch([config.path.src.img], img)
   watch([config.path.src.copy], copy)
   done()
