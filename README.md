@@ -45,3 +45,50 @@ npm run prepare
 // フックの作成
 npm run husky
 ```
+
+---
+
+## Introduction
+
+This is a static site generator using Gulp, designed to efficiently create static websites. It incorporates Tailwind CSS to enhance the development experience further.
+
+#### Streamlined Tasks
+
+- Templating for HTML
+- Automatic compilation for TypeScript and SASS
+- Auto-formatting and lint checking
+- Automatic file copying
+- Auto-reloading of the browser
+- Auto-compression for JavaScript, CSS, and images (Production only)
+- Automated Tailwind CSS builds (new)
+
+## Technologies Used
+
+- [Gulp](https://gulpjs.com/)
+- [EJS](https://ejs.co/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [SASS](https://sass-lang.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Webpack](https://webpack.js.org/)
+- [ESLint](https://eslint.org/)
+- [Stylelint](https://stylelint.io/)
+- [Prettier](https://prettier.io/)
+- [Husky](https://typicode.github.io/husky/)
+
+## Development Procedures
+
+We use npm for managing dependencies and running scripts. To get started:
+
+```bash
+npm install
+
+// Start the development server
+npm start
+// Production build (minification of JS/CSS/Images)
+npm run production
+
+// Initialize Husky
+npm run prepare
+// Create Git hooks
+npm run husky
+```
