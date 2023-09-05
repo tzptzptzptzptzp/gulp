@@ -8,12 +8,15 @@ module.exports = {
       l: { min: '1024px', max: '1399px' },
       ll: { min: '1400px' },
     },
-    colors: {
-      main: '#FED54D',
-      bg: '#FFFBEC',
-      text: '#301E1E',
+    extend: {
+      colors: {
+        main: '#000',
+        bg_light: '#FFF',
+        bg_dark: '#222',
+        text_light: '#222',
+        text_dark: '#EEE',
+      },
     },
-    extend: {},
   },
   plugins: [],
 }
