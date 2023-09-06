@@ -4,25 +4,29 @@
 // BASE
 html {
   font-size: 62.5%;
+
   @media screen and (min-width: #{$PC + px}) {
     font-size: calc(100vw * 10 / #{$PC});
   }
+
   @media screen and (min-width: #{$default-width + px}) and (max-width: #{$PC + px}) {
     font-size: 62.5%;
   }
+
   @media screen and (min-width: #{$BREAK-POINT + px}) and (max-width: #{$default-width + px}) {
     font-size: calc(100vw * 10 / #{$default-width});
   }
+
   @media screen and (max-width: #{$BREAK-POINT + px}) {
     font-size: calc(100vw * 10 / #{$SP});
   }
 }
 
 body {
+  font-family: Montserrat, 'Noto Sans JP', sans-serif;
   font-size: 1.6rem;
-  font-family: 'Montserrat', 'Noto Sans JP', sans-serif;
-  letter-spacing: 0px;
   line-height: 1;
+  letter-spacing: 0;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -32,11 +36,32 @@ img {
 }
 
 // PARTS
+.area-base {
+  @include areaBase;
+}
+
+.default-screen {
+  @include defaultScreen;
+}
+
+.fullwide-screen {
+  @include fullwideScreen;
+}
+
+.wide-screen {
+  @include wideScreen;
+}
+
+.narrow-screen {
+  @include narrowScreen;
+}
+
 @media screen and (min-width: #{$BREAK-POINT + px}) {
   .sp-only {
     display: none !important;
   }
 }
+
 @media screen and (max-width: #{$BREAK-POINT + px}) {
   .pc-only {
     display: none !important;
