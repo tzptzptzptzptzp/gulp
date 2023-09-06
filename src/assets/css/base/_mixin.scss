@@ -5,6 +5,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  padding: 0 2rem;
 }
 
 @mixin default-screen {
@@ -13,19 +14,16 @@
     #{$default-width + px},
     #{math.div($default-width, $PC) * 100 + vw}
   );
-  padding: 0 2rem;
-}
-
-@mixin fullwide-screen {
-  width: 100%;
-  max-width: 100%;
-  padding: 0 2rem;
 }
 
 @mixin wide-screen {
   width: 100%;
   max-width: max(#{$wide-width + px}, #{math.div($wide-width, $PC) * 100 + vw});
-  padding: 0 2rem;
+}
+
+@mixin fullwide-screen {
+  width: 100%;
+  max-width: 100%;
 }
 
 @mixin narrow-screen {
@@ -34,5 +32,4 @@
     #{$narrow-width + px},
     #{math.div($narrow-width, $PC) * 100 + vw}
   );
-  padding: 0 2rem;
 }
